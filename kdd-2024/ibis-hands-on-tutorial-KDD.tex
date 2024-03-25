@@ -1,0 +1,463 @@
+%%
+%% This is file `sample-sigconf.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigconf')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigconf]{acmart}
+%% NOTE that a single column version may be required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen]{acmart}
+%% 
+%% To ensure 100% compatibility, please check the white list of
+%% approved LaTeX packages to be used with the Master Article Template at
+%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
+%% before creating your document. The white list page provides 
+%% information on how to submit additional LaTeX packages for 
+%% review and adoption.
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+%%
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmlicensed}
+\copyrightyear{2024}
+\acmYear{2024}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[KDD ’24]{30th ACM SIGKDD Conference on Knowledge
+Discovery and Data Mining}{August 25--29,2024}{Barcelona, Spain}
+% %
+% %  Uncomment \acmBooktitle if th title of the proceedings is different
+% %  from ``Proceedings of ...''!
+% %
+\acmBooktitle{KDD '24:ACM SIGKDD Conference on Knowledge
+Discovery and Data Mining, August 25--29,2024, Barcelona, Spain} 
+% \acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Ibis: The Data Scientist's Toolkit for Blazing-Fast Analytics, Machine Learning, and Stream Processing}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Naty Clementi}
+\email{add@email.com}
+\affiliation{%
+  \institution{Voltron Data}
+  \state{Virginia}
+  \country{USA}
+}
+
+\author{Gil Forsyth}
+\email{add@email.com}
+\affiliation{%
+  \institution{Voltron Data}
+  \state{New York}
+  \country{USA}
+}
+
+\author{Chloe He}
+\email{add@email.com}
+\affiliation{%
+  \institution{Voltron Data}
+  \state{California}
+  \country{USA}
+}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+% \renewcommand{\shortauthors}{Trovato and Tobin, et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+Tabular data analysis, a staple in data science, often encounters scalability 
+challenges with pandas. In response, modern analytical databases (like DuckDB) 
+offer significant performance boosts but typically demand SQL preference and
+expertise. Many of these systems only provide a SQL interface though; something
+far different from pandas’ dataframe interface, requiring a rewrite of your
+analysis code.
+
+This is where Ibis comes in. Ibis is a pure-Python open-source library,
+originally created by Wes McKinney (creator of pandas), that provides a
+dataframe interface to many popular databases and analytics tools (DuckDB,
+Polars, Snowflake, Spark, etc). This lets users analyze data using the same
+consistent API, regardless of which backend they’re using, and without ever
+having to learn SQL. This tutorial introduces Ibis, emphasizing its role in
+simplifying data manipulation across diverse platforms.
+
+Additionally, attendees will explore Ibis' advancements in stream-batch unification. The 
+Ibis-flink backend combines stream and batch into a single 
+framework, addressing common barriers faced by data scientists venturing into 
+streaming analytics. By leveraging Ibis' unified Python dataframe API, we facilitate 
+seamless transitions between batch and streaming workflows, reducing operational
+complexities and enabling real-time machine learning applications.
+
+Last but not least, this tutorial will also introduce IbisML, an evolving library 
+for building machine learning pipelines using Ibis. IbisML brings the portability
+of Ibis to ML pipelines -- preprocess your data on any of the 20+ backends that 
+Ibis supports, then efficiently handoff to popular training libraries like
+scikit-learn, XGBoost, or PyTorch.
+
+Attendees will learn that using Ibis for preprocessing, data transformation, and 
+feature engineering allows seamless compilation of pipelines to SQL, enabling 
+execution on diverse performant backends without the need for code rewriting 
+during production deployment.
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+% \begin{CCSXML}
+% <ccs2012>
+%  <concept>
+%   <concept_id>00000000.0000000.0000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>500</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>300</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+%  <concept>
+%   <concept_id>00000000.00000000.00000000</concept_id>
+%   <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
+%   <concept_significance>100</concept_significance>
+%  </concept>
+% </ccs2012>
+% \end{CCSXML}
+
+% \ccsdesc[500]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc[300]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+% \ccsdesc[100]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+% \keywords{Do, Not, Us, This, Code, Put, the, Correct, Terms, for,
+%   Your, Paper}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+% \begin{teaserfigure}
+%   \includegraphics[width=\textwidth]{sampleteaser}
+%   \caption{Seattle Mariners at Spring Training, 2010.}
+%   \Description{Enjoying the baseball game from the third-base
+%   seats. Ichiro Suzuki preparing to bat.}
+%   \label{fig:teaser}
+% \end{teaserfigure}
+
+% \received{20 February 2007}
+% \received[revised]{12 March 2009}
+% \received[accepted]{5 June 2009}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Target audience and prerequisites}
+The target audience for this hands-on tutorial is data scientists, data and machine
+learning engineers, researchers, practitioners, and industry professionals who are 
+already familiar with data analysis and data manipulation tools in Python. 
+
+They may have encountered scalability challenges with some libraries like pandas 
+and are interested in exploring alternative solutions to improve performance and
+efficiency.
+
+Additionally, individuals interested in data streaming technology and machine 
+learning applications will find value in learning about Ibis' advancements in 
+these areas. 
+
+This is a hands-on tutorial, with numerous examples. Participants should ideally
+have some experience using Python and dataframe libraries like pandas or polars,
+but no SQL experience is necessary.
+
+
+\section{Tutors biography and expertise}
+
+\textbf{Naty Clementi} is a senior software engineer at Voltron Data, contributing to
+Ibis full time. She is a former academic with a Masters in Physics and PhD in
+Mechanical and Aerospace Engineering. She is also an active member of Pyladies
+and volunteers as one of the directors of Women Who Code in the Washington DC
+network. She is originally from Argentina, and speaks both Spanish and English
+fluently. Naty is an experienced instructor and educator. She has presented
+tutorials at meetups and conferences such as SciPy, PyData NYC, PyData Seattle,
+PyCon US. She has also taught multiple Python courses to graduate and
+undergraduate engineering students at George Washington University. \\ 
+
+% The most recent Ibis tutorial is the accepted Ibis tutorial at PyCon US 2024: 
+% \href{https://us.pycon.org/2024/schedule/presentation/55/}{Tutorials: Introduction to Ibis: blazing fast analytics with DuckDB, Polars, Snowflake, and more, from the comfort of your Python repl.}
+
+
+\textbf{Gil Forsyth} is a staff software engineer at Voltron Data. He followed the common
+career path of Japanese language specialist -> administrative assistant ->
+mechanical engineer -> computational fluid dynamicist -> data scientist ->
+software engineer -> machine learning engineer -> software engineer. Gil
+contributes to several projects in the PyData ecosystem and is a core maintainer
+of xonsh and Ibis. Gil is an experienced instructor, having led tutorials at
+several PyData conferences, PyCon, and SciPy. He also ran internal training on
+Python and distributed data analysis at Capital One for several years. Gil is
+one of the core maintainers of Ibis. \\ 
+
+
+\textbf{Chloe He} has a background in data science and started working on streaming systems
+when she was a Founding Engineer at Claypot AI, a startup tackling challenges in
+real-time machine learning. She led the infrastructure development of an
+open-source real-time feature engineering platform and worked on the translating
+and optimizing streaming workloads that served low-latency use cases. Later, she
+brought her streaming expertise to Voltron Data, where she now leads the
+development of Ibis streaming. Chloe has presented talks and workshops across a number of 
+conferences, such as DataConnect, NVIDIA GTC, and Google DevFest. She also taught lectures
+for the Machine Learning System Design course at Stanford and a crash course on
+recommendation systems. \\
+
+\textbf{Contributors:} Cody Peterson and Deepyaman Datta will help in the preparation of the tutorial. 
+
+\section{Corresponding tutor}
+
+\textbf{Naty Clementi}: add@email.com 
+
+\section{Tutorial Outline}
+
+\begin{enumerate}
+\item \textbf{Intro and Setup “Going beyond pandas”}
+\vspace{2pt}
+
+Get attendees up and running in a GitHub Codespace or on their laptops. A bit of
+motivation about the kinds of problems where Ibis can help, and a general survey 
+of attendees to find out what their existing pain points and experiences are.\\
+
+\item \textbf{Introduction to Ibis basics}
+\vspace{2pt}
+\begin{itemize}
+    \item What is Ibis?: Ibis as part of a composable data ecosystem.
+    \item Why Ibis?: present the problems that Ibis tackles and the benefits of adopting it.
+    \item Who Is Ibis for?: show how data engineers, data analysts, data scientists, and any data practitioner can benefit from Ibis
+\end{itemize}
+\vspace{2pt}
+Get familiarized with basics: A hands-on, follow-along notebook introducing the basic 
+verbs of Ibis data analysis (select, filter, group\_by, order\_by, and aggregate), demonstrating 
+a simple example on a few local query engines with hands-on exercises throughout.\\
+
+\item \textbf{In-memory tables, joins, and data analysis}
+\vspace{2pt}
+Building on the previous notebook, we'll explore how to join in-memory data (from 
+a pandas DataFrame, polars DataFrame, Python dictionary, or PyArrow Table) with
+existing tables in  a local database and continue analysis on the join result.
+
+We'll explore chained joins, and demonstrate \texttt{read\_parquet} and other \texttt{read\_*} methods
+for loading local data into existing databases. Then we'll continue with a series 
+of hands-on exercises, building up an analysis pipeline for some IMDB ratings data,
+but only operating on a 5\% sample of the original dataset. After, we show how the 
+same expression can be computed on the full dataset without any code changes, both 
+for local execution, or with bursting to a cloud database (or other hosted database).\\
+
+\item \textbf{Streaming}
+\vspace{2pt}
+We'll build on our previous batch analysis example and turn what we've learned
+towards a similar problem, but now with a real-time and constantly updating data
+source. 
+With hands-on exercises, we'll explore how to set up rudimentary anomaly
+detection, and demonstrate how to window and group streaming data-sources before
+redirecting them to downstream sinks.\\
+
+\item \textbf{IbisML}
+\vspace{2pt}
+We will demonstrate how to define machine learning features, create data
+transformation pipelines, and execute them across backends using IbisML. We will
+then use these features to train an ML model.
+
+\end{enumerate}
+
+\section{Prior Tutorial Comparisons}
+
+\textbf{Ibis: A fast, flexible, and portable tool for data analytics - PyData NYC 2023:} 
+This was a short form of an Ibis hands on tutorial, that concentrates on the basics. It was a 90
+min tutorial that covered an introduction and hands on example, but did not cover Ibis streaming, or Ibis ML. 
+
+\begin{flushleft}
+\textbf{\textit{Github repository}}: \url{https://github.com/ibis-project/ibis-tutorial}
+\textbf{\textit{Recording}}: \url{https://www.youtube.com/watch?v=TyopbrmlZx8}
+\textbf{\textit{Number attendees}}: ~25-50
+
+\end{flushleft}
+
+\begin{flushleft}
+\textbf{Introduction to Ibis: blazing fast analytics with DuckDB, Polars, Snowflake, and more, from the comfort of your Python repl. - PyCon US 2024:} This is a 3h hands on tutorial that is targeted to a broader Python audience,
+that will go over Ibis capabilities, covering an introduction and extensive use of the Ibis API through hands-on examples. This tutorial will not showcase streaming and ML capabilities. \\  
+
+\textbf{\textit{Abstract}}: \url{https://us.pycon.org/2024/schedule/presentation/55/}
+\textbf{\textit{Note}}: This tutorial will take place on May 2024.\\
+\textbf{\textit{Number attendees}}: Expected ~50-100
+\end{flushleft}
+
+
+\section{Participation and Interactivity Strategies}
+
+To encourage audience participation and interactivity throughout the tutorial 
+presentation, we will employ several strategies following the general practices 
+use by [Software Carpentry](https://software-carpentry.org/), as well as other 
+practices that the instructors have found useful. \\
+
+\textbf{Sticky Notes for Status Flags}: Each learner will be provided with two 
+sticky notes of different colors, such as red and green. Learners can use these 
+to discreetly indicate their status: green for completion or assistance needed, 
+and red for encountering problems. This method allows learners to continue 
+working while signaling for help, facilitating a smoother learning process for 
+everyone. \\
+
+\textbf{Minute Cards for Feedback}: Before each break, learners will take a minute 
+to write one positive aspect on a green sticky note and one area for improvement 
+or question on a red sticky note. This anonymous feedback allows instructors to 
+adjust the pace and content of the tutorial based on learners' needs and interests. \\
+
+\textbf{Pair Programming}: Pairing learners encourages collaborative problem-solving, 
+clarification of concepts, and discussion of shared interests. Seating arrangements 
+will facilitate pairing, with learners switching partners periodically to maximize
+interaction and prevent anyone from feeling isolated. \\
+
+\textbf{Collaborative space to ask questions}: We will use the conference slack, or 
+provide a channel for the students to ask questions in a written format while the 
+tutorial is being performed. This lets us capture more questions, given that 
+sometimes not everyone feels comfortable asking it out loud. \\
+
+\textbf{Peak Rule for Lesson Endings}: We will aim to end each lesson/section on a 
+high note, leaving learners with a positive impression of the session. By focusing
+on the most intense and final moments, we enhance the overall learning experience
+and leave participants feeling motivated and satisfied. \\
+
+\textbf{One Up, One Down Feedback}: At the end of the day, learners will provide
+alternating positive and negative feedback points about the day's session. This 
+structured feedback encourages participants to express their honest opinions, 
+helping instructors to address concerns effectively.
+
+
+\section{Potential Societal Impacts}
+
+Ibis and therefore this tutorial encapsulate several significant societal impacts, 
+particularly in enhancing developer efficiency and optimizing resources.\\
+
+\textbf{Saving Developer Time}: Ibis reduces time spent on database and code migrations 
+by providing a consistent API across various backends, allowing developers to 
+focus on innovation and product quality. \\
+
+\textbf{Promoting Standardization}: With a unified Python dataframe API, Ibis fosters 
+interoperability and collaboration, leading to more efficient workflows and knowledge
+sharing. \\
+
+\textbf{Facilitating Access to Advanced Analytics}: By simplifying backend complexities
+and offering a familiar Python interface, Ibis lowers barriers for data scientists 
+and researchers to leverage advanced analytics techniques and foster innovation. \\
+
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{ibis-tutorial}
+\nocite{*} % Include all references from the .bib file
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf.tex'.
