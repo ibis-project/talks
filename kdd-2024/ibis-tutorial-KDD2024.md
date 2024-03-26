@@ -29,23 +29,24 @@ these systems only provide a SQL interface though; something far different from
 pandas’ dataframe interface, requiring a rewrite of your analysis code.
 
 This is where Ibis comes in. Ibis is a pure-Python open-source library, originally 
-created by Wes McKinney creator of pandas, that provides a dataframe interface to
+created by Wes McKinney (creator of pandas), that provides a dataframe interface to
 many popular databases and analytics tools (DuckDB, Polars, Snowflake, Spark, etc). This 
 lets users analyze data using the same consistent API, regardless of which backend 
 they’re using, and without ever having to learn SQL. This tutorial introduces 
 Ibis, emphasizing its role in simplifying data manipulation across diverse platforms.
 
-Additionally, attendees will explore Ibis' advancements in data streaming technology. The 
-Ibis-flink backend, inspired by Apache Flink SQL, combines stream and batch into a single 
+Additionally, attendees will explore Ibis' advancements in stream-batch unification. The 
+Ibis-flink backend combines stream and batch into a single 
 framework, addressing common barriers faced by data scientists venturing into 
 streaming analytics. By leveraging Ibis unified Python dataframe API, we facilitate 
 seamless transitions between batch and streaming workflows, reducing operational
 complexities and enabling real-time machine learning applications.
 
-Last but not least, this tutorial will also introduce Ibis ML, an evolving library 
-for building machine learning pipelines using Ibis. Where these pipelines can then
-be used to transform and feed data to other machine learning libraries like 
-xgboost or scikit-learn.
+Last but not least, this tutorial will also introduce IbisML, an evolving library 
+for building machine learning pipelines using Ibis. IbisML brings the portability
+of Ibis to ML pipelines -- preprocess your data on any of the 20+ backends that 
+Ibis supports, then efficiently handoff to popular training libraries like
+scikit-learn, XGBoost, or PyTorch
 
 Attendees will learn that using Ibis for preprocessing, data transformation, and 
 feature engineering allows seamless compilation of pipelines to SQL, enabling 
