@@ -63,7 +63,7 @@ and are interested in exploring alternative solutions to improve performance and
 efficiency.
 
 Additionally, individuals interested in data streaming technology and machine 
-learning applications would find value in learning about Ibis' advancements in 
+learning applications will find value in learning about Ibis' advancements in 
 these areas. 
 
 This is a hands-on tutorial, with numerous examples to get your hands on 
