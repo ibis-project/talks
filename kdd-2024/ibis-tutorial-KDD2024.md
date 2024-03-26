@@ -172,7 +172,7 @@ WHAT WE HAVE IN THE SCIPY TUTORIAL IS
 
 ## 2:10 - Selectors 
 Continuing on from joins, we'll introduce selectors as a means of quickly 
-renaming and cleaning datasets, a powerful feature stolen inspired by dplyr.
+renaming and cleaning datasets, a powerful feature ~stolen from~ inspired by dplyr.
 
 # 3:00 - Coffee Break (5 minutes) + Q&A in the room
 
