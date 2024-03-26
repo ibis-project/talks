@@ -174,12 +174,6 @@ WHAT WE HAVE IN THE SCIPY TUTORIAL IS
 Continuing on from joins, we'll introduce selectors as a means of quickly 
 renaming and cleaning datasets, a powerful feature stolen inspired by dplyr.
 
-## 2:30 - UDFs and sql passthrough (I THINK THIS SHOULD BE GONE GIVEN THE AUDIENCE AND TIME)
-
-Demonstrate using UDFs to add custom operations.
-
-Explain and demonstrate various "escape hatches" when you really need to use SQL directly.
-
 # 3:00 - Coffee Break (5 minutes) + Q&A in the room
 
 ## HELP HERE MAYBE AN EXAMPLE THAT CAN SHOW STREAMING AND ML, OR TWO? IT'LL HAVE TO BE SMALL
