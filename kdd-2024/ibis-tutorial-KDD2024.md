@@ -24,7 +24,7 @@ Ian's suggestion 20%, please make suggestions with this in mind.
 
 Tabular data analysis, a staple in data science, often encounters scalability 
 challenges with pandas. In response, modern analytical databases (like DuckDB) 
-offer significant performance boosts but typically demand SQL expertise. Many of 
+offer significant performance boosts but typically demand SQL preference and expertise. Many of 
 these systems only provide a SQL interface though; something far different from 
 pandas’ dataframe interface, requiring a rewrite of your analysis code.
 
