@@ -67,8 +67,9 @@ Additionally, individuals interested in data streaming technology and machine
 learning applications will find value in learning about Ibis' advancements in 
 these areas. 
 
-This is a hands-on tutorial, with numerous examples. Participants should ideally have some experience using Python and
-dataframe libraries like pandas or polars, but no SQL experience is necessary.
+This is a hands-on tutorial, with numerous examples. Participants should ideally
+have some experience using Python and dataframe libraries like pandas or polars,
+but no SQL experience is necessary.
 
 # Tutors (name, affiliation, email, address, phone)
 
