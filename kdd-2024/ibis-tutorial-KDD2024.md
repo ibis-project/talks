@@ -142,7 +142,7 @@ of attendees to find out what their existing pain points and experiences are.
 **Slides**
 - What is Ibis?: Ibis as part of a composable data ecosystem.
 - Why Ibis?: present the problems that Ibis tackles and the benefits of adopting it.
-- Who Is Ibis for?: shown the versatility of profiles that can benefit from Ibis (data engineers, data analysts, and data scientists, any data practitioner) and how.
+- Who Is Ibis for?: show how data engineers, data analysts, data scientists, and any data practitioner can benefit from Ibis
 
 **Get familiarized with basics: **
 
