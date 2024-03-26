@@ -158,8 +158,7 @@ Building on the previous notebook, we'll explore how to join in-memory data (fro
 a pandas DataFrame, Python dictionary, or PyArrow Table) with existing tables in 
 a local database and continue analysis on the join result.
 
-We'll touch on the Ibis deferred operator for specifying predicates in chained joins, 
-and demonstrate read_parquet and other read_* methods for loading local data into
+We'll explore chained joins, and demonstrate read_parquet and other read_* methods for loading local data into
 existing databases. Then we'll continue with a series of hands-on exercises, 
 building up an analysis pipeline for some IMDB ratings data, but only operating 
 on a 5% sample of the original dataset. After, we show how the same expression 
