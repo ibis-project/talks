@@ -24,21 +24,23 @@ Ian's suggestion 20%, please make suggestions with this in mind.
 
 Tabular data analysis, a staple in data science, often encounters scalability 
 challenges with pandas. In response, modern analytical databases (like DuckDB) 
-offer significant performance boosts but typically demand SQL preference and expertise. Many of 
-these systems only provide a SQL interface though; something far different from 
-pandas’ dataframe interface, requiring a rewrite of your analysis code.
+offer significant performance boosts but typically demand SQL preference and
+expertise. Many of these systems only provide a SQL interface though; something
+far different from pandas’ dataframe interface, requiring a rewrite of your
+analysis code.
 
-This is where Ibis comes in. Ibis is a pure-Python open-source library, originally 
-created by Wes McKinney (creator of pandas), that provides a dataframe interface to
-many popular databases and analytics tools (DuckDB, Polars, Snowflake, Spark, etc). This 
-lets users analyze data using the same consistent API, regardless of which backend 
-they’re using, and without ever having to learn SQL. This tutorial introduces 
-Ibis, emphasizing its role in simplifying data manipulation across diverse platforms.
+This is where Ibis comes in. Ibis is a pure-Python open-source library,
+originally created by Wes McKinney (creator of pandas), that provides a
+dataframe interface to many popular databases and analytics tools (DuckDB,
+Polars, Snowflake, Spark, etc). This lets users analyze data using the same
+consistent API, regardless of which backend they’re using, and without ever
+having to learn SQL. This tutorial introduces Ibis, emphasizing its role in
+simplifying data manipulation across diverse platforms.
 
 Additionally, attendees will explore Ibis' advancements in stream-batch unification. The 
 Ibis-flink backend combines stream and batch into a single 
 framework, addressing common barriers faced by data scientists venturing into 
-streaming analytics. By leveraging Ibis unified Python dataframe API, we facilitate 
+streaming analytics. By leveraging Ibis' unified Python dataframe API, we facilitate 
 seamless transitions between batch and streaming workflows, reducing operational
 complexities and enabling real-time machine learning applications.
 
@@ -133,18 +135,19 @@ of a "composable data ecosystem" (also requested by Ian).  We need to include
 some streaming content and some ML content, again keep in mind that the ask is 
 to introduce this as a 20% of total content.
 
-## 0:00 - Intro and Setup “Going beyond pandas”
+## Intro and Setup “Going beyond pandas”
 
 Get attendees up and running in a GitHub Codespace or on their laptops. A bit of
 motivation about the kinds of problems where Ibis can help, and a general survey 
 of attendees to find out what their existing pain points and experiences are.
 
-## 0:15 - Introduction to Ibis basics
+## Introduction to Ibis basics
 
 **Slides**
 - What is Ibis?: Ibis as part of a composable data ecosystem.
 - Why Ibis?: present the problems that Ibis tackles and the benefits of adopting it.
-- Who Is Ibis for?: show how data engineers, data analysts, data scientists, and any data practitioner can benefit from Ibis
+- Who Is Ibis for?: show how data engineers, data analysts, data scientists, and
+  any data practitioner can benefit from Ibis
 
 **Get familiarized with basics: **
 
@@ -152,36 +155,28 @@ A hands-on, follow-along notebook introducing the basic verbs of Ibis data
 analysis (select, filter, group_by, order_by, and aggregate), demonstrating a 
 simple example on a few local query engines with hands-on exercises throughout.
 
-## 1:00 - Coffee Break (5 minutes that definitely takes 10 minutes)
-
-## 1:10 - In-memory tables, joins, and data analysis (Maybe make this shorter?)
+## In-memory tables, joins, and data analysis (Maybe make this shorter?)
 
 Building on the previous notebook, we'll explore how to join in-memory data (from 
-a pandas DataFrame, Python dictionary, or PyArrow Table) with existing tables in 
-a local database and continue analysis on the join result.
+a pandas DataFrame, polars DataFrame, Python dictionary, or PyArrow Table) with
+existing tables in  a local database and continue analysis on the join result.
 
-We'll explore chained joins, and demonstrate read_parquet and other read_* methods
+We'll explore chained joins, and demonstrate `read_parquet` and other `read_*` methods
 for loading local data into existing databases. Then we'll continue with a series 
 of hands-on exercises, building up an analysis pipeline for some IMDB ratings data,
 but only operating on a 5% sample of the original dataset. After, we show how the 
 same expression can be computed on the full dataset without any code changes, both 
 for local execution, or with bursting to a cloud database (or other hosted database).
 
-## 1:50 - Coffee Break (5 minutes) + Q&A in the room
+## Streaming 
 
-HERE IS WHERE WE NEED TO THINK HOW TO TIE THE PREVIOUS CONTENT WITH STREAMING AND ML 
-WHAT WE HAVE IN THE SCIPY TUTORIAL IS 
+We'll build on our previous batch analysis example and turn what we've learned
+towards a similar problem, but now with a real-time and constantly updating data
+source. 
 
-## 2:10 - Selectors 
-Continuing on from joins, we'll introduce selectors as a means of quickly 
-renaming and cleaning datasets, a powerful feature ~stolen from~ inspired by dplyr.
-
-## This needs work. we have only 3h with breaks included. 
-
-# 
-
-- Transition from batch to streaming - walk through example
-- Something ML - what would be the example here, can we do an XGBoost on IMDB data?
+With hands-on exercises, we'll explore how to set up rudimentary anomaly
+detection, and demonstrate how to window and group streaming data-sources before
+redirecting them to downstream sinks.
 
 ## Closing remarks. 
 
