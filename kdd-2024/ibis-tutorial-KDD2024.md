@@ -1,26 +1,9 @@
 # Descriptive Title 
 
-We need a title here, in the past we had this options
-
-- Scipy and PyCon 2024: Intro to Ibis: blazing fast analytics with DuckDB, Polars, Snowflake, and more,
-from the comfort of your Python repl.
-- PyData NYC 2023: Ibis - Expressive analytics in Python at any scale
-
-I think we needs something more DS/ML/AI kind of thing. Here are some options I 
-brainstormed with gpt and modified, but Im not convinced by anyone: 
-
 - "Ibis: The Data Scientist's Powerhouse for Blazing-Fast Analytics and Machine Learning"
-- "Mastering Data Analytics and ML with Ibis: Speed, Simplicity, and Scale"
-- "Elevate Your Data Science Game with Ibis: Fast, Flexible, and Future-Proof"
-- "Ibis: Your Gateway to Expressive Analytics and Streamlined ML"
+
 
 # Abstract (300 words)
-
-I tried to adapt what we had for SciPy and PyCon, and include something on Streaming 
-and ML. Keep in mind that streaming and ML will be a small part of this tutorial, per 
-Ian's suggestion 20%, please make suggestions with this in mind. 
-
-**(I believe we are at 270 words now)**
 
 Tabular data analysis, a staple in data science, often encounters scalability 
 challenges with pandas. In response, modern analytical databases (like DuckDB) 
@@ -74,15 +57,10 @@ have some experience using Python and dataframe libraries like pandas or polars,
 but no SQL experience is necessary.
 
 # Tutors (name, affiliation, email, address, phone)
-
-Notes: 
-- I'll collect the extra info separately given that this is a public repo. 
-- For the in person tutorial I was thinking in Gil and I, at the moment. Not sure 
-  what the budget will be, or the situation. We need at least 2 people to run a 3h 
-  tutorial.
  
-Naty Clementi
-Gil Forsyth 
+- Naty Clementi
+- Gil Forsyth
+- Chloe He 
 
 # Tutors’ short bio and expertise related to the tutorial (up to 200 words per tutor)
 
@@ -90,7 +68,8 @@ Gil Forsyth
    part of the tutorial
 
 - Naty Clementi
-- Gil Forsyth 
+- Gil Forsyth
+- Chloe He  
   
 
 ### Naty Clementi
@@ -117,23 +96,27 @@ The most recent Ibis tutorial is the accepted Ibis tutorial at PyCon US 2024:
 [Tutorials: Introduction to Ibis: blazing fast analytics with DuckDB, Polars, Snowflake, and more, from the comfort of your Python repl.](https://us.pycon.org/2024/schedule/presentation/55/)
 
 
+### Chloe He
+
+**Bio**
+Chloe has a background in data science and started working on streaming systems when she was a Founding Engineer at Claypot AI, a startup tackling challenges in real-time machine learning. She led the infrastructure development of an open-source real-time feature engineering platform and worked on the translating and optimizing streaming workloads that served low-latency use cases. Later, she brought her streaming expertise to Voltron Data, where she now leads the development of Ibis streaming.
+
+**Expertise:**
+Chloe has presented talks and workshops across a number of conferences, such as DataConnect, NVIDIA GTC, and Google DevFest. She also taught lectures for the Machine Learning System Design course at Stanford and a crash course on recommendation systems.
+
+
 2. List of contributors, i.e., tutors who will only help prepare the tutorial material
 
-- I'm not sure who to put here, I will need designated responsible people for some 
-  Ibis ML showcase and Ibis streaming (Chloe?)
+- Cody Peterson
+- Deepyaman Datta
 
 
 # Corresponding tutor with her/his email address
 
-- Naty Clementi (I'll add my email upon submission)
+- Naty Clementi 
 
 # Tutorial outline. Please provide as much detail as possible.
 
-Here is where I need some help. I modify parts of the Scipy outline to include more about 
-why Ibis, what is Ibis and for Who, I think this will let us introduce Ibis as part 
-of a "composable data ecosystem" (also requested by Ian).  We need to include 
-some streaming content and some ML content, again keep in mind that the ask is 
-to introduce this as a 20% of total content.
 
 ## Intro and Setup “Going beyond pandas”
 
@@ -149,13 +132,13 @@ of attendees to find out what their existing pain points and experiences are.
 - Who Is Ibis for?: show how data engineers, data analysts, data scientists, and
   any data practitioner can benefit from Ibis
 
-**Get familiarized with basics: **
+**Get familiarized with basics:**
 
 A hands-on, follow-along notebook introducing the basic verbs of Ibis data 
 analysis (select, filter, group_by, order_by, and aggregate), demonstrating a 
 simple example on a few local query engines with hands-on exercises throughout.
 
-## In-memory tables, joins, and data analysis (Maybe make this shorter?)
+## In-memory tables, joins, and data analysis
 
 Building on the previous notebook, we'll explore how to join in-memory data (from 
 a pandas DataFrame, polars DataFrame, Python dictionary, or PyArrow Table) with
@@ -178,8 +161,9 @@ With hands-on exercises, we'll explore how to set up rudimentary anomaly
 detection, and demonstrate how to window and group streaming data-sources before
 redirecting them to downstream sinks.
 
-## Closing remarks. 
+## IbisML
 
+## Closing remarks. 
 
 
 # If the tutorial or a similar/highly related tutorial has been presented before (either by the same author(s) or by others): A list of forums, their event dates and locations, the number of participants, and the similarities/differences of prior tutorials to the one proposed for prior KDDs (up to 100 words for each entry)
@@ -207,8 +191,7 @@ This is a 3h hands on tutorial that is targeted to a broader Python audience, th
 - Ibis blogs: https://ibis-project.org/posts
 - Ibis tutorial PyData NYC 2023: https://github.com/ibis-project/ibis-tutorial
 - The composable codex: https://voltrondata.com/codex
-- Maybe other crucial libraries docs? 
-- Any relevant papers? 
+
 
 # Strategies that you plan to employ to encourage audience participation and interactivity throughout the tutorial presentation
 
