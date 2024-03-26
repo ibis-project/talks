@@ -183,8 +183,7 @@ renaming and cleaning datasets, a powerful feature ~stolen from~ inspired by dpl
 - Transition from batch to streaming - walk through example
 - Something ML - what would be the example here, can we do an XGBoost on IMDB data?
 
-# Closing remarks. 
-
+## Closing remarks. 
 
 
 
