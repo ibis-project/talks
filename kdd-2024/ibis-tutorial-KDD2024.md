@@ -154,18 +154,18 @@ simple example on a few local query engines with hands-on exercises throughout.
 
 ## 1:00 - Coffee Break (5 minutes that definitely takes 10 minutes)
 
-## 1:10 - In-memory tables, joins, and data analysis (need to adapt this for audience)
+## 1:10 - In-memory tables, joins, and data analysis (Maybe make this shorter?)
 
 Building on the previous notebook, we'll explore how to join in-memory data (from 
 a pandas DataFrame, Python dictionary, or PyArrow Table) with existing tables in 
 a local database and continue analysis on the join result.
 
-We'll explore chained joins, and demonstrate read_parquet and other read_* methods for loading local data into
-existing databases. Then we'll continue with a series of hands-on exercises, 
-building up an analysis pipeline for some IMDB ratings data, but only operating 
-on a 5% sample of the original dataset. After, we show how the same expression 
-can be computed on the full dataset without any code changes, both for local 
-execution, or with bursting to a cloud database (or other hosted database).
+We'll explore chained joins, and demonstrate read_parquet and other read_* methods
+for loading local data into existing databases. Then we'll continue with a series 
+of hands-on exercises, building up an analysis pipeline for some IMDB ratings data,
+but only operating on a 5% sample of the original dataset. After, we show how the 
+same expression can be computed on the full dataset without any code changes, both 
+for local execution, or with bursting to a cloud database (or other hosted database).
 
 ## 1:50 - Coffee Break (5 minutes) + Q&A in the room
 
@@ -176,21 +176,16 @@ WHAT WE HAVE IN THE SCIPY TUTORIAL IS
 Continuing on from joins, we'll introduce selectors as a means of quickly 
 renaming and cleaning datasets, a powerful feature ~stolen from~ inspired by dplyr.
 
-# 3:00 - Coffee Break (5 minutes) + Q&A in the room
+## This needs work. we have only 3h with breaks included. 
 
-## HELP HERE MAYBE AN EXAMPLE THAT CAN SHOW STREAMING AND ML, OR TWO? IT'LL HAVE TO BE SMALL
-I'M WORRIED ABOUT THINGS BEING DISCONNECTED
+# 
 
-# 3:10 - PyPI data exploration and integration with the broader Python ecosystem 
+- Transition from batch to streaming - walk through example
+- Something ML - what would be the example here, can we do an XGBoost on IMDB data?
 
-Demonstate projection pushdown and column pruning when operating on remote datasets. Explore questions about PyPI maintainers, search for typo-squatters, and try to find explanations for outliers using data from https://py-code.org/datasets.
+# Closing remarks. 
 
-Feed Ibis expressions into common plotting tools to look for outliers and demonstrate interoperability.
 
-(Note: depending on conference wifi, even with column pruning and parquet files this may be untenable. We have backup exercises that perform the same analysis but make use of either the Clickhouse Playground or a sponsored SnowFlake account, so only basic internet connectivity will be required. Bonus: using Ibis means shifting to these backup options is a one-line operation!)
-3:30- Intro to geospatial workflows
-
-Introduction to using Ibis geospatial with supported backends. Short hands-on exercises using NYC subway and bike-share data to try to find the fastest way to get a pizza from one borough to another.
 
 
 # If the tutorial or a similar/highly related tutorial has been presented before (either by the same author(s) or by others): A list of forums, their event dates and locations, the number of participants, and the similarities/differences of prior tutorials to the one proposed for prior KDDs (up to 100 words for each entry)
@@ -200,6 +195,7 @@ Introduction to using Ibis geospatial with supported backends. Short hands-on ex
 
 This was a short form of an Ibis hands on tutorial, that concentrates on the basics. It was a 90 min tutorial that covered an introduction and hands on example, but did not cover ibis streaming, or Ibis ML. 
 
+- Content in Github repository: [Ibis Tutorial PyData NYC 2023](https://github.com/ibis-project/ibis-tutorial)
 - youtube recording link: [Ibis - Expressive analytics in Python at any scale | PyData NYC	2022](https://www.youtube.com/watch?v=XdZklxTbCEA)
 - Number attendees: ~25-50
   
