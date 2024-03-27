@@ -75,10 +75,18 @@ but no SQL experience is necessary.
 ### Naty Clementi
 
 **Bio**
-Naty Clementi is a senior software engineer at Voltron Data, contributing to Ibis full time. She is a former academic with a Masters in Physics and PhD in Mechanical and Aerospace Engineering. She is also an active member of Pyladies and volunteers as one of the directors of Women Who Code in the Washington DC network. She is originally from Argentina, and speaks both Spanish and English fluently. 
+Naty Clementi is a senior software engineer at Voltron Data, contributing to
+Ibis full time. She is a former academic with a Masters in Physics and PhD in
+Mechanical and Aerospace Engineering. She is also an active member of Pyladies
+and volunteers as one of the directors of Women Who Code in the Washington DC
+network. She is originally from Argentina, and speaks both Spanish and English
+fluently. 
 
 **Expertise:** 
-Naty Clementi is an experienced instructor and educator. She has presented tutorials at meetups and conferences such as SciPy, PyData NYC, PyData Seattle, PyCon US. She has also taught multiple Python courses to graduate and undergraduate engineering students at George Washington University. 
+Naty Clementi is an experienced instructor and educator. She has presented
+tutorials at meetups and conferences such as SciPy, PyData NYC, PyData Seattle,
+PyCon US. She has also taught multiple Python courses to graduate and
+undergraduate engineering students at George Washington University. 
 
 The most recent Ibis tutorial is the accepted Ibis tutorial at PyCon US 2024: 
 [Tutorials: Introduction to Ibis: blazing fast analytics with DuckDB, Polars, Snowflake, and more, from the comfort of your Python repl.](https://us.pycon.org/2024/schedule/presentation/55/)
@@ -87,10 +95,17 @@ The most recent Ibis tutorial is the accepted Ibis tutorial at PyCon US 2024:
 ### Gil Forsyth
 
 **Bio**
-Gil Forsyth is a staff software engineer at Voltron Data. He followed the common career path of Japanese language specialist -> administrative assistant -> mechanical engineer -> computational fluid dynamicist -> data scientist -> software engineer -> machine learning engineer -> software engineer. Gil contributes to several projects in the PyData ecosystem and is a core maintainer of xonsh and Ibis.
+Gil Forsyth is a staff software engineer at Voltron Data. He followed the common
+career path of Japanese language specialist -> administrative assistant ->
+mechanical engineer -> computational fluid dynamicist -> data scientist ->
+software engineer -> machine learning engineer -> software engineer. Gil
+contributes to several projects in the PyData ecosystem and is a core maintainer
+of xonsh and Ibis.
 
-**Expertise:** 
-Gil Forsyth is an experienced instructor, having led tutorials at several PyData conferences, PyCon, and SciPy. He also ran internal training on Python and distributed data analysis at Capital One for several years. Gil is one of the core maintainers of Ibis.
+**Expertise:** Gil Forsyth is an experienced instructor, having led tutorials at
+several PyData conferences, PyCon, and SciPy. He also ran internal training on
+Python and distributed data analysis at Capital One for several years. Gil is
+one of the core maintainers of Ibis.
 
 The most recent Ibis tutorial is the accepted Ibis tutorial at PyCon US 2024: 
 [Tutorials: Introduction to Ibis: blazing fast analytics with DuckDB, Polars, Snowflake, and more, from the comfort of your Python repl.](https://us.pycon.org/2024/schedule/presentation/55/)
@@ -99,10 +114,19 @@ The most recent Ibis tutorial is the accepted Ibis tutorial at PyCon US 2024:
 ### Chloe He
 
 **Bio**
-Chloe has a background in data science and started working on streaming systems when she was a Founding Engineer at Claypot AI, a startup tackling challenges in real-time machine learning. She led the infrastructure development of an open-source real-time feature engineering platform and worked on the translating and optimizing streaming workloads that served low-latency use cases. Later, she brought her streaming expertise to Voltron Data, where she now leads the development of Ibis streaming.
+Chloe has a background in data science and started working on streaming systems
+when she was a Founding Engineer at Claypot AI, a startup tackling challenges in
+real-time machine learning. She led the infrastructure development of an
+open-source real-time feature engineering platform and worked on the translating
+and optimizing streaming workloads that served low-latency use cases. Later, she
+brought her streaming expertise to Voltron Data, where she now leads the
+development of Ibis streaming.
 
 **Expertise:**
-Chloe has presented talks and workshops across a number of conferences, such as DataConnect, NVIDIA GTC, and Google DevFest. She also taught lectures for the Machine Learning System Design course at Stanford and a crash course on recommendation systems.
+Chloe has presented talks and workshops across a number of conferences, such as
+DataConnect, NVIDIA GTC, and Google DevFest. She also taught lectures for the
+Machine Learning System Design course at Stanford and a crash course on
+recommendation systems.
 
 
 2. List of contributors, i.e., tutors who will only help prepare the tutorial material
@@ -116,7 +140,6 @@ Chloe has presented talks and workshops across a number of conferences, such as 
 - Naty Clementi 
 
 # Tutorial outline. Please provide as much detail as possible.
-
 
 ## Intro and Setup “Going beyond pandas”
 
@@ -163,6 +186,10 @@ redirecting them to downstream sinks.
 
 ## IbisML
 
+We will demonstrate how to define machine learning features, create data
+transformation pipelines, and execute them across backends using IbisML. We will
+then use these features to train an ML model
+
 ## Closing remarks. 
 
 
@@ -171,7 +198,9 @@ redirecting them to downstream sinks.
 
 **PyData NYC (short tutorial):**  
 
-This was a short form of an Ibis hands on tutorial, that concentrates on the basics. It was a 90 min tutorial that covered an introduction and hands on example, but did not cover ibis streaming, or Ibis ML. 
+This was a short form of an Ibis hands on tutorial, that concentrates on the
+basics. It was a 90 min tutorial that covered an introduction and hands on
+example, but did not cover ibis streaming, or Ibis ML. 
 
 - Content in Github repository: [Ibis Tutorial PyData NYC 2023](https://github.com/ibis-project/ibis-tutorial)
 - youtube recording link: [Ibis - Expressive analytics in Python at any scale | PyData NYC	2022](https://www.youtube.com/watch?v=XdZklxTbCEA)
@@ -179,7 +208,10 @@ This was a short form of an Ibis hands on tutorial, that concentrates on the bas
   
 **PyCon US - Pittsburgh USA -coming May 2024:**
 
-This is a 3h hands on tutorial that is targeted to a broader Python audience, that will go over Ibis capabilities, covering an introduction and extensive use of the Ibis API through hands-on examples. This tutorial will not showcase streaming and ML capabilities. 
+This is a 3h hands on tutorial that is targeted to a broader Python audience,
+that will go over Ibis capabilities, covering an introduction and extensive use
+of the Ibis API through hands-on examples. This tutorial will not showcase
+streaming and ML capabilities. 
 
 - Link: [Tutorials: Introduction to Ibis: blazing fast analytics with DuckDB, Polars,	Snowflake, and more, from the comfort of your Python repl.](https://us.pycon.org/2024/schedule/presentation/55/)  
 - Number attendees: Expected ~50-100 
@@ -236,5 +268,19 @@ structured feedback encourages participants to express their honest opinions,
 helping instructors to address concerns effectively.
 
 
+# A brief discussion of the potential societal impacts of your tutorial
 
+Ibis and therefore this tutorial encapsulate several significant societal impacts, 
+particularly in enhancing developer efficiency and optimizing resources.
 
+**Saving Developer Time:** Ibis reduces time spent on database and code migrations 
+by providing a consistent API across various backends, allowing developers to 
+focus on innovation and product quality.
+
+**Promoting Standardization:** With a unified Python dataframe API, Ibis fosters 
+interoperability and collaboration, leading to more efficient workflows and knowledge
+sharing.
+
+**Facilitating Access to Advanced Analytics:** By simplifying backend complexities
+and offering a familiar Python interface, Ibis lowers barriers for data scientists 
+and researchers to leverage advanced analytics techniques and foster innovation. 
