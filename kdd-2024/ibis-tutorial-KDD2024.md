@@ -203,7 +203,7 @@ basics. It was a 90 min tutorial that covered an introduction and hands on
 example, but did not cover ibis streaming, or Ibis ML. 
 
 - Content in Github repository: [Ibis Tutorial PyData NYC 2023](https://github.com/ibis-project/ibis-tutorial)
-- youtube recording link: [Ibis - Expressive analytics in Python at any scale | PyData NYC	2022](https://www.youtube.com/watch?v=XdZklxTbCEA)
+- youtube recording link: [ Ibis: A fast, flexible, and portable tool for data analytics](https://www.youtube.com/watch?v=TyopbrmlZx8)
 - Number attendees: ~25-50
   
 **PyCon US - Pittsburgh USA -coming May 2024:**
@@ -223,12 +223,12 @@ streaming and ML capabilities.
 - Ibis blogs: https://ibis-project.org/posts
 - Ibis tutorial PyData NYC 2023: https://github.com/ibis-project/ibis-tutorial
 - The composable codex: https://voltrondata.com/codex
+- Welcome to the Tidyverse: https://joss.theoj.org/papers/10.21105/joss.01686
+- The Composable Data Management System Manifesto: https://www.vldb.org/pvldb/vol16/p2679-pedreira.pdf
 
 
 # Strategies that you plan to employ to encourage audience participation and interactivity throughout the tutorial presentation
 
-Note: I adapted this based on my experience (and probably Gil's too) from Software
-Carpentry, we used some of these in the past. 
 
 To encourage audience participation and interactivity throughout the tutorial 
 presentation, we will employ several strategies following the general practices 
