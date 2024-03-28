@@ -188,7 +188,7 @@ redirecting them to downstream sinks.
 
 We will demonstrate how to define machine learning features, create data
 transformation pipelines, and execute them across backends using IbisML. We will
-then use these features to train an ML model
+then use these features to train an ML model.
 
 ## Closing remarks. 
 
