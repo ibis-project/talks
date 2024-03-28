@@ -31,7 +31,7 @@ Last but not least, this tutorial will also introduce IbisML, an evolving librar
 for building machine learning pipelines using Ibis. IbisML brings the portability
 of Ibis to ML pipelines -- preprocess your data on any of the 20+ backends that 
 Ibis supports, then efficiently handoff to popular training libraries like
-scikit-learn, XGBoost, or PyTorch
+scikit-learn, XGBoost, or PyTorch.
 
 Attendees will learn that using Ibis for preprocessing, data transformation, and 
 feature engineering allows seamless compilation of pipelines to SQL, enabling 
