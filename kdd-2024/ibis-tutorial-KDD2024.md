@@ -1,6 +1,6 @@
 # Descriptive Title 
 
-- "Ibis: The Data Scientist's Powerhouse for Blazing-Fast Analytics and Machine Learning"
+- "Ibis: The Data Scientist's Toolkit for Blazing-Fast Analytics, Machine Learning, and Stream Processing"
 
 
 # Abstract (300 words)
